@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Tracker</title>
+
+  <!-- ////////// FONT ////////// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+  <!-- ////////// FONTAWESOME ////////// -->
+  <script src="https://kit.fontawesome.com/db1c7c754e.js" crossorigin="anonymous"></script>
+  <!-- ////////// STYLES ////////// -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- top panel -->
+  <!-- <div class="top-panel-container">
+    <div>Study</div>
+  </div> -->
+  <section>
+    <!-- main container -->
+    <div class="container">
+      <!-- side panel -->
+      <div class="side-panel-container">
+        <div class="work-section">
+          <h3>Work</h3>
+          <div>
+            <button class="plus-btn" id="w-plus-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p id="w-minutes">05</p>
+            <!-- <input type="number" class="" name="w-minutes" id="w-minutes" min="10" max="70" value="25" aria-controls="false" autofocus> -->
+            <button class="minus-btn" id="w-minus-btn">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="break-section">
+          <h3>Break</h3>
+          <div>
+            <button class="plus-btn" id="b-plus-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p id="b-seconds">05</p>
+            <button class="minus-btn" id="b-minus-btn">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- watch panel -->
+      <div class="watch-container">
+        <div class="panel">
+          <h1 id="mode">Work</h1>
+        </div>
+        <div class="clock-container">
+          <p id="minutes">25</p>
+          <p>:</p>
+          <p id="seconds">00</p>
+        </div>
+        <!-- controls -->
+        <div class="controls-container">
+          <button class="start-btn" id="start-btn">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button class="pause-btn" id="pause-btn" style="display: none;">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="reset-btn" id="reset-btn">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

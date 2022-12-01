@@ -1,0 +1,230 @@
+:root {
+  font-size: 62.5%;
+  --c-black: #1a1a1a;
+  --c-white: #e1e1e1;
+  --c-grey: #898989;
+  --c-purple: #b462ff;
+  --c-fuschia: #ff45b4;
+  --c-fuschia-dark: #bb1e7c;
+  --c-fuschia-light: #ff8ad0;
+  --c-blue: #18b6ff;
+  --c-green: #1beb9e;
+  --c-green-dark: #23ad7b;
+  --c-green-light: #62ffc6;
+  --c-orange: #ff9528;
+  --c-yellow: #dddd25;
+  --c-red: #ff2828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #1a1a1a;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+section {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 90%;
+  width: 80%;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.side-panel-container,
+.watch-container {
+  color: var(--c-white);
+}
+
+
+/* ////////// SIDE PANEL ////////// */
+/* side panel */
+.side-panel-container {
+  /* width: 25%; */
+  /* height: fit-content; */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* both sec*/
+.work-section,
+.break-section {
+  text-align: center;
+}
+
+.work-section div,
+.break-section div {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.work-section div *,
+.break-section div * {
+  padding: 10px;
+  /* color: #fff; */
+}
+
+.plus-btn, .minus-btn {
+  /* border-radius: 50%;
+  border: solid 2.5px var(--c-grey); */
+}
+
+.plus-btn i {
+  transition: .5s ease all;
+  border-radius: 50%;
+  /* background: var(--c-white); */
+  color: var(--c-green);
+}
+
+.minus-btn i {
+  border-radius: 50%;
+  transition: .5s ease all;
+  /* background: var(--c-white); */
+  color: var(--c-fuschia);
+}
+
+.plus-btn i:active {
+  background: var(--c-green-light);
+  transition: 0s;
+}
+
+.plus-btn i:hover {
+  /* background: var(--c-green-dark); */
+}
+
+.minus-btn i:active {
+  background: var(--c-fuschia-light);
+  transition: 0s;
+}
+
+/* work section */
+.work-section {
+  color: var(--c-purple);
+}
+
+/* break section */
+.break-section {
+  color: var(--c-blue);
+}
+
+
+
+
+/* ////////// WATCH SECTION ////////// */
+/* watch */
+.watch-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+}
+
+/* panel */
+.panel {
+  color: var(--c-orange)
+}
+
+/* clock */
+.clock-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 10rem;
+}
+
+/* controls */
+.controls-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 50%;
+}
+
+.controls-container button {
+  width: 25%;
+  height: 80%;
+  justify-content: center;
+}
+
+.controls-container button i {
+  font-size: 3.5rem;
+}
+
+.controls-container .start-btn i {
+  color: var(--c-blue);
+}
+
+.controls-container .pause-btn i {
+  color: var(--c-yellow);
+}
+
+.controls-container .reset-btn i {
+  color: var(--c-red);
+}
+
+
+
+
+/* ////////// ANIMATION ////////// */
+
+/* ////////// RESPONSIVE ////////// */
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-panel-container {
+    width: 100%;
+    height: 25%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .work-section, .break-section {
+    margin-right: 20px;
+  }
+  
+  .watch-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
